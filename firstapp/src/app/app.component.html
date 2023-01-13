@@ -1,0 +1,7 @@
+<label>Enter your name:</label>
+<input type ='text' [(ngModel)]= 'userText'/><br/>
+<!-- <app-child [simpleInput] = 'userText' [parentMessage]='title' > 
+     </app-child> -->
+
+<app-child (messageEvent)="receiveMessage($event)"></app-child>
+<router-outlet></router-outlet>
